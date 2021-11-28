@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body{
+	background-image: linear-gradient(to bottom, rgb(63, 63, 78) , rgb(20, 20, 30));
+	color: #ffffff;
+}
+
+footer{
+	margin: auto;
+}
+
+#helpbtn{
+	position: absolute;
+	right: 10px;
+}
+
+#uck{
+  filter: blur(3px);
+  transition: filter .5s;
+}
+#uck:hover{
+  filter: blur(0px);
+}
+
+
+#mananasdnjidshyu{
+  filter: blur(100px);
+}
+#mananasdnjidshyu:hover{
+  filter: blur(0px);
+  transition: filter .5s;
+}
+
+
+#blockTexttop{
+	font-family: Montserrat;
+	position: absolute;
+	left: 64px;
+	top: -8px;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+p {
+	font-family:Roboto;
+}
+
+code {
+	background-color: rgba(0, 0, 0, 0.25);
+  margin-left: 40px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.demonstraition {
+	transform:  rotateX(9deg) rotateY(30deg) rotateZ(-2deg) translateX(0px) translateY(25px) translateZ(0px) skewX(0deg) skewY(0deg);
+	box-shadow: -2px 5px 5px rgba(0, 0, 0, .5);
+	transition: transform .5s;
+}
+
+.demonstraition:hover{
+	transform:none;
+}
