@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<style>
+	canvas {
+		border-radius: 10px;
+	    border:2px solid #d3d3d3;
+	    background-color: #f1f1f1;
+	}
+</style>
+</head>
+<body>
+	<script>
+
+		var score = 0;
+
+		function addScoreCount()
+		{
+			score += 1;
+
+			var scoreCount = document.getElementById('score');
+			scoreCount.innerHTML = "Score : " + score.toString()
+		}
+	</script>
+	<p id="score">Score : 0</p>
+	<button type="button" onclick="addScoreCount();">Click Me!</button>
+</body>
+</html>
