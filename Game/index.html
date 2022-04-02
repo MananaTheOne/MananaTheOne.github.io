@@ -3,14 +3,31 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <style>
+	    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+    @keyframes press {
+        10%  {translate(0, 0px);}
+        0%   {background-color: #a0a0a0; transform: translate(0, 10px)}
+        100% {background-color: #f0f0f0;transform: translate(0, 0px)}
+    }
+
+    body {
+        text-align: center;
+        padding-top: 50px;
+        font-family: 'Roboto', sans-serif;
+    }
+    
 	button {
-	
 	    padding: 100px;
-		
-            border-radius: 10px;
+        border-radius: 25px;
 	    border:2px solid #d3d3d3;
 	    background-color: #f1f1f1;
+        font-family: 'Roboto', sans-serif;
 	}
+
+    button:active {
+        animation: 0.3s press ease-out;
+    }
 </style>
 </head>
 <body>
