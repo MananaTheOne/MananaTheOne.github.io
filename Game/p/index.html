@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>lol</title>
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Roboto,wght@1,300&display=swap');
+		@keyframes notmeisgoingdownomfg {
+			0% {opacity: 0%; top: -0.25in;}
+			100% {opacity: 100%; top: 0;}
+		}
+		@keyframes notnotmeisgoingupomfg {
+			0% {opacity: 100%; top: 0;}
+			100% {opacity: 0%; top: -0.25in;}
+		}
+		body{
+			text-align: center;
+			font-family: 'Roboto', sans-serif;
+		}
+		button {
+			transition: 0.1s;
+			color: darkslategray;
+			font-size: 100%;
+			border-style: solid;
+			border-color: dimgray;
+			border-radius: 25px;
+			padding: 1in;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 10%;
+		}
+		button:active {
+			background-color: darkslategray;
+			color: white;
+		}
+		.notnotnotme {
+			transition: 0.5s;
+			position: relative;
+			color: rgba(0, 0, 0, 0.25);
+			font-style: italic;
+			opacity: 0%;
+			top: -0.25in;
+		}
+		.notnotnotme.notnotme {
+			opacity: 100% !important;
+			top: 0 !important;
+		}
+	</style>
+</head>
+<body>
+	<audio id="audioStart">
+ 		<source src="https://www.myinstants.com/media/sounds/moan_3.mp3" type="audio/mp3">
+ 	</audio>
+ 	<script>
+ 		function play() {
+ 			var audio = document.getElementById("audioStart");
+ 			audio.pause();
+ 			audio.currentTime = 0;
+ 			audio.play();
+ 		}
+ 		function notmee() {
+ 			var notme = document.getElementsByClassName("notnotnotme")[0];
+ 			notme.classList.add("notnotme");
+ 		}
+	</script>
+	<button onclick="play();">Hello, I am the button</button>
+	<p onclick="notmee();">Click The <b>Button.</b></p>
+	<p class="notnotnotme">Not Me, The Button Right Up There :)</p>
+	<!-- <p id="debug">a</p> -->
+</body>
+</html>
