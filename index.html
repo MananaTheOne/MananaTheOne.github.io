@@ -1,14 +1,131 @@
-<!--
-  am bad at js so I didn't include it :P
--->
-
-
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Manana</title>
-  </head>
-  <body>
-    Test
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>mananatheone</title>
+  <link rel="icon" type="image/x-icon" href="images/picture.png">
+
+  <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+    body {
+      /* font-family: 'Courier New', Courier, monospace; */
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    img.emoji {
+      vertical-align:middle;
+      display: inline;
+      height:1.5em;
+      margin-right: 0.5em;
+      margin-left: 0.5em;
+    }
+
+    h1 {
+      font-size: 20px;
+      font-family: 'Bungee';
+      letter-spacing: 2px;
+    }
+
+    h2 {
+      margin-bottom: 0;
+    }
+
+    hr {
+      /* border: none; */
+      border-top: 1px solid black;
+    }
+
+    .profile {
+      position: float;
+      background-image: url("images/bg.jpg");
+      background-position: center;
+      background-size: 100%;
+      padding-bottom: 33%;
+      border-radius: 10px;
+      z-index: 1;
+    }
+    .profile .picture {
+      position: absolute;
+      width:  33%;
+      left:   calc(50% - 33%/2 - 8px);
+      top:    calc(33% - 33%/2);
+      border-radius: 100%;
+      border-width: 8px;
+      border-style:solid;
+      border-color:white;
+      z-index: 2;
+    }
+
+    .topmenu {
+      /* margin:0; */
+      text-align: center;
+      background-color: white;
+      position:sticky;
+      /* top:0; */
+
+      z-index: 99;
+    }
+
+    .bio {
+      margin-top: calc((33% - 33%/2 + 33%)/2);
+      margin-right: 20px;
+      margin-left: 20px;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    .portfolio {
+      margin-top: 64px;
+      margin-right: 20px;
+      margin-left: 20px;
+    } .portfolio p {text-align: justify;}
+
+    footer {
+      margin-top: 64px;
+    }
+  </style>
+</head>
+<body>
+  <div class="topmenu">
+    <h1>mananatheone</h1>
+  </div>
+  <div class="profile">
+    <img class="picture" src="images/picture.png">
+  </div>
+  
+  <div class="bio">
+    <h2>Biography</h2>
+    <hr>
+    <p>
+      &nbsp;Hi. I'm Aidan Ocmer, and I'm a solo game developer.<br><br>
+      👨‍💻 I make my games in Python or C++<br>
+      🎵 I make my own music<br>
+      🎨 I make my own art
+    </p>
+  </div>
+  <div class="portfolio">
+    <h2>Portfolio</h2>
+    <hr>
+    May 23, 2023
+    <iframe width="100%"src="https://www.youtube.com/embed/fhikZakF_QU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+  </div>
+
+  <footer>
+    lololol footer 
+  </footer>
+
+  <script>
+  twemoji.parse(document.body);
+  alert("If you are in a desktop please note that this site is unfinished and may only work on mobile devices.");
+  </script>
+</body>
 </html>
