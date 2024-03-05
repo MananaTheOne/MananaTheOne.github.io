@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aidan Ocmer's Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+        @keyframes scroll {
+            0% {transform: translateX(0%);}
+            100% {transform: translateX(calc(-600% - 50pt));}
+        }
+
+        body {
+            overflow-x:hidden;
+            padding: 0; margin: 0;
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+        }
+
+
+        .header {
+            background-image: url("images/header.jpg");
+            background-position-y: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100vw;
+            height: 50vh;
+        }
+
+        .whitegradient {
+            background: rgb(255,255,255);
+            background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.5) 75%, rgba(255,255,255,0) 100%);
+            min-width: 100%;
+            min-height: 100%;
+        }
+
+        #name {
+            color: white;
+            mix-blend-mode: difference;
+            position: sticky;
+            top:15%;
+            text-align: center;
+            margin: auto;
+        }
+
+        #name h1 {
+            margin: auto;
+            font-size: 70pt;
+            font-weight: 900;
+            font-style: #888;
+        }
+
+        .flex-container-container {
+            mask: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 10%, rgba(255,255,255,1) 90%, rgba(255,255,255,0) 100%);
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: nowrap;
+            width:max-content;
+            height: 25em;
+
+            margin: 0;
+            padding: 0;
+            transition-duration: 1s;
+            filter: brightness(100%);
+        }
+
+        .flex-container>img {
+            border-width: 4px;
+            border-style: solid;
+
+            object-fit: cover;
+            aspect-ratio: 4/3;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-name: scroll;
+            animation-duration: 25s;
+
+            transform: translateY(0pt);
+            transition: 250ms;
+        }
+
+        .flex-container>img:hover {
+            transform: translateY(10pt);
+        }
+
+        .flex-container:hover {
+            animation-play-state: paused;
+        }
+
+        h2 {
+            position: relative;
+            margin-top: 50pt;
+            text-align: center;
+        }
+
+        h2:before {
+        content: "";
+            display: block;
+            width: 15%;
+            height: 5px;
+            background: #0004;
+            left: 25%;
+            top: 50%;
+            position: absolute;
+        }
+        h2:after {
+            content: "";
+            display: block;
+            float: left;
+            width: 15%;
+            height: 5px;
+            background: #0004;
+            right: 25%;
+            top: 50%;
+            position: absolute;
+        }
+
+        img {
+            display: block;
+            /* max-width:40%;
+            width: auto; */
+            height: auto;
+            border-radius: 10pt;
+            margin: 10pt;
+        }
+
+        .aboutme {
+            text-align:left;
+            width: 80vw;
+            margin: auto;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        #aboutprofile{
+            float: left;
+            width: 150pt;
+            border-radius: 10%;
+            margin-top: 0;
+
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        footer {
+            width: 100%;
+            position: fixed;
+            bottom: 0%;
+            color: white;
+            background-color: black;
+        }
+
+        .icons {
+            filter: invert(1.0);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="whitegradient">
+            <span id="name">
+                    <h1>AIDAN OCMER</h1>
+                    <p>Photography, Design, Music, and Programming</p>
+            </span>
+        </div>
+    </div>
+    <h2>MY WORKS</h2>
+    <span class="flex-container-container">
+        <div class="flex-container" id="portfolio">
+            <img src="images/portfolio/0.jpg">
+            <img src="images/portfolio/1.jpg">
+            <img src="images/portfolio/2.jpg">
+            <img src="images/portfolio/3.jpg">
+            <img src="images/portfolio/4.png">
+            <img src="images/portfolio/5.png">
+            <img src="images/portfolio/0.jpg">
+            <img src="images/portfolio/1.jpg">
+            <img src="images/portfolio/2.jpg">
+            <img src="images/portfolio/3.jpg">
+            <img src="images/portfolio/4.png">
+            <img src="images/portfolio/5.png">
+        </div>
+    </span> 
+
+    <h2>ABOUT ME</h2>
+    <div class="aboutme">
+        <img id="aboutprofile" src="images/profile.jpg">
+        <!-- <h3 style="text-align: right;">AIDAN OCMER</h3> -->
+        <p>
+            My name is <b>Aidan Ocmer</b>.<br><br>
+
+            I am a passionate and innovative graphic designer with a unique perspective on design. Drawing inspiration from experimental styles and grayscale palettes, I specialize in creating visually striking designs that push the boundaries of traditional graphic design.
+            <br><br>
+            Despite being colorblind, I have developed a deep understanding of color theory, allowing me to skillfully craft monotone and analogous palettes that captivate audiences and evoke emotion. My proficiency in design software, coupled with my typography and layout design skills, enables me to bring my creative visions to life with precision and flair.
+            <br><br>
+            In my work, I embrace a structured yet flexible approach, balancing organization with messy experimentation to uncover new possibilities and refine my designs. With a keen eye for detail and a commitment to excellence, I meticulously review and polish my work to ensure the highest quality standards are met.
+            <br><br>
+            As a creative problem-solver, I thrive on challenges and am constantly seeking out innovative solutions to design briefs. My adaptability, coupled with strong communication and time management skills, allows me to effectively collaborate with clients and colleagues to bring projects to fruition.
+            <br><br>
+            I am excited to continue pushing the boundaries of graphic design and to contribute my unique perspective to new and exciting projects.
+        </p>
+        <br><br>
+        <div style="text-align: center;">
+            <a href="cdn/resume.pdf" style="display: flex; padding: auto;">
+                <img src="https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/download/default/24px.svg">
+                <h3>DOWNLOAD RESUME</h3>
+            </a>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <footer style="display: flex; text-align: center;">
+        <h3>&nbsp; CONTACT: </h3>
+        <table>
+            <tr>
+                <td><img class="icons" src="https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/mail/default/24px.svg"></td>
+                <td>oakmeraidan@gmail.com</td>
+                <td><img class="icons"  src="https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/call/default/24px.svg"></td>
+                <td>+63 960 872 8658</td>
+            </tr>
+        </table>
+    </footer>
+</body>
+</html>
